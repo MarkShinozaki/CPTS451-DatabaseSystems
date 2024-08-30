@@ -6,17 +6,17 @@
 
 ### NAVIGATION OF ALL MATERIAL 
 
-### 1. [Course Information]()
-
-### 2. [Additional Resources]()
----
-### 4. [Assignments]()
-
-
+### 1. [Course Information](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Course-Information)
+  - #### [Textbook](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Textbook)
+--- 
+### 2. [Additional Resources](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Additional-Resources)
 
 ---
-### 5. []()
+### 4. [Assignments](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Assignments)
+
 ---
+### 5. [Project](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Project)
+
 
 > [!IMPORTANT]
 > ***This Course is meant to introduce you to the...***
