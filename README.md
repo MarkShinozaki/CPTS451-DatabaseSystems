@@ -7,9 +7,10 @@
 ### NAVIGATION OF ALL MATERIAL 
 
 ### 1. [Course Information]()
-  
+
+### 2. [Additional Resources]()
 ---
-### 4. [Assignemnts]()
+### 4. [Assignments]()
 
 
 
