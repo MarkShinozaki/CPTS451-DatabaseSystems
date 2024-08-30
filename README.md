@@ -1,4 +1,4 @@
-# **Cpt_S 451 - Introduction to Database Systems**
+# **CPTS 451 - Introduction to Database Systems**
 
 ## **Course Details**
 - **Instructor:** Ananth Jillepalli
