@@ -1,0 +1,4 @@
+SELECT COUNT(*) FROM business - 11481
+SELECT COUNT(*) FROM checkintable - 481360
+SELECT COUNT(*) FROM reviewtable - 416479
+SELECT COUNT(*) FROM business - 192999
