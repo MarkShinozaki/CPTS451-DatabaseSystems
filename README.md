@@ -17,7 +17,7 @@
 ---
 ### 5. [Project](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Project)
 
-
+---
 > [!IMPORTANT]
 > ***This Course is meant to introduce you to the...***
 > ***The Work and Material in this Repo is meant to provide assistance; there is a possibility that a few things here and there are not correct, so please check all contents yourself.***
