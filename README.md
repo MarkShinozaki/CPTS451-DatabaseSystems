@@ -1,5 +1,5 @@
 # CPTS 451 - WASHINGTON STATE UNIVERISTY
-## Intro to Database Management Systems / Capstone Project, Complete Course Navigation
+## Intro to Database Management Systems, Complete Course Navigation
 
 > [!TIP]
 > ***For Easy Navigation on any page, always click on the Menu Icon towards the top right of the page***
