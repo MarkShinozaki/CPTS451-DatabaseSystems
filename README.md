@@ -338,8 +338,117 @@ This week focuses on the relational model, which is the basis for relational dat
 - **Indexes in SQL**: Indexes are crucial for optimizing query performance. They act as pointers to data in a table, significantly speeding up data retrieval. However, they come with trade-offs, such as increased storage requirements and potentially slower write operations. Proper database tuning involves strategically creating and managing indexes to balance these factors.
 
 ---
-### [WEEK 9](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%209)
+### [WEEK 9 - Design Theory](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%209)
+
+#### Overview of Relational Design Theory:
+
+- **Motivation & Overview**: The slides begin by discussing the importance of relational design theory, which helps in creating efficient and effective database schemas by eliminating redundancies and anomalies.
+
+- **Functional Dependencies**: A key concept in database design, functional dependencies describe the relationship between attributes in a database. Understanding these dependencies is crucial for normalization.
+
+- **Boyce-Codd Normal Form (BCNF)**: BCNF is a type of database normalization aimed at reducing redundancy and ensuring data integrity by organizing attributes into relations that follow specific rules.
+
+- **Third Normal Form (3NF)**: The slides also touch upon 3NF, which is another form of database normalization that balances reducing redundancy with preserving functional dependencies.
+
+#### Detailed Topics:
+
+1. **Functional Dependencies**: The concept of functional dependencies is introduced as a fundamental element of database normalization. The slides explain how certain attributes (keys) can determine other attributes and how this understanding can help in designing a database schema that avoids redundancy and anomalies.
+
+2. **Boyce-Codd Normal Form (BCNF)**: The material explains the conditions under which a database relation is considered to be in BCNF. This form of normalization is critical in reducing redundancy by ensuring that every non-trivial functional dependency involves a superkey.
+
+3. **Third Normal Form (3NF)**: While BCNF is more stringent, 3NF is discussed as a compromise between reducing redundancy and preserving all functional dependencies. It allows some controlled redundancy but ensures that the schema is still efficient and maintains data integrity.
+
+4. **Designing a Database Schema**: The slides walk through examples of how to design a database schema, starting from a "mega" relation and decomposing it into smaller, more manageable relations that follow normalization rules.
+
+5. **Anomalies in Database Design**: Redundancy, update anomalies, and deletion anomalies are highlighted as problems that can occur in poorly designed schemas. The slides explain how to detect and avoid these issues through proper normalization.
+
+6. **Schema Decomposition**: The process of decomposing a large relation into smaller relations to satisfy BCNF or 3NF is detailed. This includes algorithms and steps to ensure that the decomposition is both lossless (no data is lost) and dependency-preserving.
+
+7. **Examples and Practice**: The slides provide multiple examples and practice problems that demonstrate how to apply the theory to real-world scenarios, such as decomposing a relation into BCNF and ensuring that the design is free of anomalies.
+
+#### Summary:
+
+- The overall goal of these slides is to equip students with the knowledge and tools to design robust database schemas that are normalized, reducing redundancy and avoiding anomalies. By understanding and applying concepts like functional dependencies, BCNF, and 3NF, students can create databases that are both efficient and reliable.
 
 
 ---
-### [WEEK 10](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%2010)
+### [WEEK 10 - Storage & Indexing](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%2010)
+
+
+#### Key Topics Covered:
+
+1. **DBMS Architecture Overview**:
+
+    - The architecture of a DBMS is layered to manage various aspects of data processing, including query optimization, execution, access methods, buffer management, and disk space management. These layers must also consider concurrency control and recovery to ensure consistent and reliable operations.
+
+2. **Data Storage**:
+
+    - **File Management**: Data in a database is stored in files, which are collections of pages. Each page contains a number of records. The file management system must support operations like inserting, deleting, and modifying records, as well as fetching and scanning records.
+
+    - **Page Formats**: Pages can store records in fixed-length or variable-length formats. Fixed-length records simplify space management, while variable-length records allow more flexible storage but require additional management overhead.
+
+3. **File Organization**:
+
+    - **Heap Files**: These are unordered collections of records. While simple to maintain, they can be inefficient for queries since they require scanning the entire file.
+
+    - **Sorted Files**: These files are ordered based on a search key, making range queries efficient but increasing the complexity and cost of insertions and deletions.
+
+    - **Indexes**: Indexes are data structures that provide fast access to records based on search keys. They can significantly speed up search queries and are typically implemented using tree structures or hashing techniques.
+
+4. **Indexing**:
+
+    - **Clustered vs. Unclustered Indexes**: A clustered index stores data in the same order as the index, making range queries very efficient. Unclustered indexes store data separately from the index, which may require additional I/O operations.
+
+    - **B+ Trees**: A common type of index used in databases. B+ trees are balanced tree structures that store data entries in the leaf nodes, allowing efficient search, insert, and delete operations.
+
+    - **Hash-Based Indexes**: These are best suited for equality searches. They distribute data across buckets based on a hash function, providing quick access but limited support for range queries.
+
+5. **Cost Model for Analysis**:
+
+    - The slides present a cost model that evaluates the performance of different file organizations and indexing strategies based on the number of disk I/O operations. This model helps in understanding the trade-offs between different storage and indexing methods.
+
+6. **Choice of Indexes**:
+
+    - Indexes should be chosen based on the workload of the database. The slides discuss strategies for selecting the right indexes, considering the nature of queries (e.g., range queries vs. equality searches) and the importance of clustering for performance.
+
+#### Summary of Topics:
+- **DBMS Architecture**: The architecture's role in managing data efficiently, ensuring concurrency, and supporting various query operations.
+
+- **Data Storage**: How data is stored in files and pages, and the formats used to manage this data.
+
+- **File Organization**: The different methods of organizing data in a database, including heap files, sorted files, and the use of indexes.
+
+- **Indexing**: The types of indexes (clustered, unclustered, B+ trees, hash-based) and their impact on query performance.
+
+- **Cost Analysis**: Evaluating the performance of storage and indexing strategies through disk I/O cost analysis.
+
+- **Index Selection**: Guidelines for choosing the right indexes based on the database workload and query types.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
