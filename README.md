@@ -273,11 +273,69 @@ This week focuses on the relational model, which is the basis for relational dat
 - **Complex Queries**: The slides offer examples of more complex SQL queries, such as finding employees with salaries greater than the average, or suppliers who charge more than the average for specific parts.
 
 ---
-### [WEEK 7](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%207)
+### [WEEK 7 - Constrainsts & Triggers](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%207)
+
+1. **Database Modifications in SQL**
+   
+- INSERT, DELETE, UPDATE: These commands are used to modify the contents of a database.
+  
+    - `INSERT` adds new records.
+    - `DELETE` removes records based on a condition.
+    - `UPDATE` changes existing records.
+
+2. **Constraints in SQL**
+   
+    - **Primary Keys and Unique Constraints**: Ensure that the data in a column is unique or that it can uniquely identify a row in the table.
+
+    - **Foreign Key Constraints**: Enforces a link between two tables, ensuring that the value in a column corresponds to a value in another table.
+
+    - **CHECK Constraints**: Used to limit the values that can be placed in a column.
+
+    - **Assertions**: General constraints that can span across multiple tables and must always be true.
+
+3. Triggers in SQL
+    - **Event-Condition-Action (ECA) Model**: A trigger responds to specific events (INSERT, UPDATE, DELETE) by evaluating conditions and performing specified actions.
+
+    - **Row-Level vs. Statement-Level Triggers**: Row-level triggers execute for each row affected by the event, while statement-level triggers execute once for the entire operation.
+
+### Brief Explanation of Topics
+
+- **Database Modifications**: This involves altering the data within tables using SQL commands like INSERT, DELETE, and UPDATE. These commands change the database state by adding, removing, or modifying records.
+
+- **SQL Constraints**: Constraints are rules enforced on data columns to maintain the integrity and accuracy of the data. Primary keys, foreign keys, and CHECK constraints are fundamental tools to ensure that the database adheres to these rules.
+
+- **Triggers**: Triggers are automated processes that occur when certain conditions in the database are met. They help enforce complex rules that can't be implemented with just constraints and are crucial for maintaining the integrity of database operations.
 
 ---
-### [WEEK 8](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%208)
+### [WEEK 8 - SQL Views](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%208)
 
+1. **SQL Views**:
+
+    - **Three-Schema Architecture**: The slides introduce the concept of a three-schema architecture with physical, logical, and external levels. Views play a key role at the external level, allowing different applications or users to have tailored views of the data.
+
+    - **Definition of Views**: A view in SQL is a virtual table based on the result set of a SQL query. Views can be either virtual (not stored physically) or materialized (physically stored in the database).
+
+    - **Examples**: Several examples demonstrate creating views, such as a view for employees in the "Purchasing" department, showing their names, salaries, and managers. These views help simplify complex queries and enhance data independence.
+
+    - **View Updates**: The slides discuss how views can be updated, which depends on certain conditions. Updatable views allow modifications, while others might require special handling, such as using triggers.
+
+    - **Views for Data Independence**: Views can help maintain compatibility when database schemas change by recreating old schema structures from new ones.
+
+2. **Indexes in SQL**:
+
+    - **Purpose of Indexes**: Indexes are data structures that improve the speed of data retrieval operations on a database table at the cost of additional storage space and potentially slower writes.
+
+    - **Creating Indexes**: The syntax for creating indexes in SQL is discussed, along with examples of creating indexes on one or multiple columns.
+
+    - **Using Indexes**: The slides show how indexes can be used to optimize query performance by quickly locating the required rows, especially when dealing with large datasets.
+
+    - **Database Tuning**: The importance of choosing the right indexes for database performance is emphasized, considering the trade-offs between faster read operations and slower write operations.
+
+### Brief Explanation of the Topics:
+
+- **SQL Views**: Views are an essential feature in SQL that allow the creation of virtual tables based on queries. They enable logical data independence, simplify complex queries, and enhance security by restricting access to specific data. There are two types of views: virtual and materialized. Virtual views are not stored in the database, while materialized views are stored physically and can be periodically refreshed.
+
+- **Indexes in SQL**: Indexes are crucial for optimizing query performance. They act as pointers to data in a table, significantly speeding up data retrieval. However, they come with trade-offs, such as increased storage requirements and potentially slower write operations. Proper database tuning involves strategically creating and managing indexes to balance these factors.
 
 ---
 ### [WEEK 9](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%209)
