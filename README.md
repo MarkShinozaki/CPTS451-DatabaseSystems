@@ -25,7 +25,7 @@
 
 ---
 
-### 2. Milestone 1:
+### 2. [Milestone 1](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Project/Project%20Milestone%201)
 
 #### Steps Overview:
 
@@ -60,7 +60,7 @@
 
 --- 
 
-### 3. **Milestone 2**:
+### 3. [Milestone 2](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Project/Project%20Milestone%202)
 
 In Milestone 2, you will refine your initial database design, populate your database with real data, write SQL triggers, and start developing the application GUI.
 
@@ -103,11 +103,9 @@ In Milestone 2, you will refine your initial database design, populate your data
       - Source code of your application in a ZIP file.
 
 
-
-
 ---
 
-### 4. **Milestone 3**:
+### 4. [Milestone 3](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Project/Project%20Milestone%203)
 
 Milestone 3 is focused on the final implementation and demonstration of your application. You will complete your application and demonstrate its functionality through a recorded video.
 
