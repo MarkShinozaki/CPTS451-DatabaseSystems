@@ -10,12 +10,56 @@
   - #### [Textbook](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Textbook)
 --- 
 ### 2. [Additional Resources](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Additional-Resources)
+---
+
+### 3. [Slides/Lectures](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/blob/Slides-Lectures/README.md)
+
+- #### [WEEK 1 - Course Introduction and Database Fundamentals](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%201)
+
+- #### [WEEK 2 - Relational Model](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%202)
+
+- #### [WEEK 3 - Entity-Relationship (ER) 2 ](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%203)
+
+- #### [WEEK 4 - Relational Algebra](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%204)
+
+- #### [WEEK 5 - SQL - Part 1](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%205)
+
+- #### [WEEK 6 - SQL - Part 2](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%206)
+
+- #### [WEEK 7 - Constrainsts & Triggers](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%207)
+
+- #### [WEEK 8 - SQL Views](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%208)
+
+- #### [WEEK 9 - Design Theory](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%209)
+
+- #### [WEEK 10 - Storage & Indexing](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%2010)
+
+
+
+
+
 
 ---
 ### 4. [Assignments](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Assignments)
 
+- #### [Assignment 1](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Assignments/Assignment%201) 
+- #### [Assignment 2](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Assignments/Assignment%202)
+- #### [Assignment 3](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Assignments/Assignment%203)
+- #### [Assignment 4](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Assignments/Assignment%204)
+- #### [Assignment 5](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Assignments/Assignment%205)
+- #### [Assignment 6](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Assignments/Assignment%206)
+
 ---
 ### 5. [Project](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Project)
+
+- #### [Project Description Overview](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Project/Project%20Description)
+- #### [Milestone 1](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Project/Project%20Milestone%201)
+- #### [Milestone 2](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Project/Project%20Milestone%202)
+- #### [Milestone 3](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Project/Project%20Milestone%203)
+
+
+
+
 
 ---
 > [!IMPORTANT]
