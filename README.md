@@ -138,34 +138,44 @@ This week focuses on the relational model, which is the basis for relational dat
 
 #### Key Topics Covered:
 
-1. Basic Operations in Relational Algebra:
+1. **Basic Operations in Relational Algebra**:
 
-    - Union (∪), Intersection (∩), Difference (−): These are set operations that operate on relations with the same schema.
-    - Selection (σ): Filters rows in a relation based on a specified condition.
-    - Projection (π): Selects specific columns from a relation, eliminating duplicates.
-    - Cartesian Product (×): Combines all rows from two relations, pairing each row of one relation with every row of the other.
-    - Join (⨝): Combines rows from two relations based on a related column between them.
+    - **Union (∪), Intersection (∩), Difference (−)**: These are set operations that operate on relations with the same schema.
+      
+    - **Selection (σ)**: Filters rows in a relation based on a specified condition.
+      
+    - **Projection (π)**: Selects specific columns from a relation, eliminating duplicates.
+      
+    - **Cartesian Product (×)**: Combines all rows from two relations, pairing each row of one relation with every row of the other.
+      
+    - **Join (⨝)**: Combines rows from two relations based on a related column between them.
 
-2. Extended Relational Algebra:
+2. **Extended Relational Algebra**:
 
-    - Theta-Join (⨝θ): A join that uses a general condition to combine rows.
-    - Natural Join (⨝): A special kind of join that automatically matches columns with the same name and eliminates redundant columns.
-    - Outer Joins (Left, Right, Full): Variants of join that include unmatched rows from one or both relations, padding with NULL values.
+    - **Theta-Join (⨝θ)**: A join that uses a general condition to combine rows.
+      
+    - **Natural Join (⨝)**: A special kind of join that automatically matches columns with the same name and eliminates redundant columns.
+      
+    - **Outer Joins (Left, Right, Full)**: Variants of join that include unmatched rows from one or both relations, padding with NULL values.
 
-3. Operations on Bags:
+3. **Operations on Bags**:
 
     - Unlike sets, bags (or multisets) can contain duplicate tuples.
+      
     - Relational algebra operations are adapted for bags, including bag union, bag intersection, and bag difference.
 
-4. Extended Operators:
+4. **Extended Operators**:
 
-    - Duplicate Elimination (δ): Removes duplicate tuples from a relation.
-    - Sorting (τ): Orders tuples in a relation based on specified attributes.
-    - Grouping and Aggregation (γ): Groups tuples and applies aggregate functions like SUM, AVG, COUNT, etc.
+    - **Duplicate Elimination (δ)**: Removes duplicate tuples from a relation.
+      
+    - **Sorting (τ)**: Orders tuples in a relation based on specified attributes.
+      
+    - **Grouping and Aggregation (γ)**: Groups tuples and applies aggregate functions like SUM, AVG, COUNT, etc.
 
-5. Expression Trees and Complex Expressions:
+5. **Expression Trees and Complex Expressions**:
 
     - Relational algebra expressions can be represented as trees where leaves are operands and internal nodes are operators.
+      
     - These trees help in understanding the flow of operations in a query.
 
 ---
@@ -173,13 +183,13 @@ This week focuses on the relational model, which is the basis for relational dat
 
 #### Key Topics and Concepts Covered:
 
-1. SQL as a Query Language:
+1. **SQL as a Query Language**:
 
     - SQL is the standard language for querying and manipulating relational databases. It has several aspects, including Data Definition Language (DDL), Query Language (SELECT), and Data Manipulation Language (DML - INSERT, DELETE, UPDATE).
 
     - SQL allows users to describe what they want from the database, and the DBMS figures out how to execute the query efficiently.
 
-2. Basic SQL Query Structure:
+2. **Basic SQL Query Structure**:
 
     - The basic form of an SQL query is the `SELECT-FROM-WHERE` structure:
 
@@ -187,53 +197,80 @@ This week focuses on the relational model, which is the basis for relational dat
       - `FROM`: Specifies the tables from which to retrieve the data.
       - `WHERE`: Specifies the conditions the data must meet.
 
-3. SQL vs. Relational Algebra:
+3. **SQL vs. Relational Algebra**:
 
     - SQL queries can be represented using relational algebra, but SQL often uses "bag" semantics (allowing duplicates) as opposed to "set" semantics in relational algebra.
 
-4. The "SELECT" Clause:
+4. **The "SELECT" Clause**:
 
     - Specifies which attributes to project in the final result. It can include renaming of attributes, mathematical operations, and the use of functions like `COUNT`, `SUM`, `AVG`, `MIN`, and `MAX`.
 
     - The `SELECT` clause can also handle single and multiple relation queries.
 
-5. Eliminating Duplicates:
+5. **Eliminating Duplicates**:
 
     - By default, SQL does not eliminate duplicates in query results. The keyword `DISTINCT` can be used to remove duplicates.
 
-6. Conditions in the "WHERE" Clause:
+6. **Conditions in the "WHERE" Clause**:
 
     - The `WHERE` clause is used to specify conditions that rows must satisfy to be included in the result. This includes using comparison operators, pattern matching (LIKE), and dealing with NULL values.
 
-7. Set Operations:
+7. **Set Operations**:
 
     - SQL supports set operations like `UNION`, `INTERSECT`, and `EXCEPT`, which can be used to combine results from multiple queries.
 
-8. Aggregation:
+8. **Aggregation**:
 
     - SQL provides aggregation functions such as `MIN`, `MAX`, `SUM`, `COUNT`, and `AVG`, which can be used to perform calculations on a set of values.
 
-9. GROUP BY and HAVING Clauses:
+9. **GROUP BY and HAVING Clauses**:
 
     - The `GROUP BY` clause is used to group rows that have the same values in specified columns, often used with aggregate functions.
 
     - The `HAVING` clause is used to filter groups based on aggregate conditions, similar to how the WHERE clause filters rows.
 
-10. Ordering Output:
+10. **Ordering Output**:
 
     - The `ORDER BY` clause is used to sort the result set by one or more columns. It can also handle NULL values explicitly using options like `NULLS FIRST` or `NULLS LAST`.
 
 
-
-
-
-
-
-
-
 ---
-### [WEEK 6](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%206)
+### [WEEK 6 - SQL - Part 2](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%206)
 
+#### Nested Queries
+- Definition: Also called subqueries, these are queries embedded within an outer query, functioning similarly to function calls in programming languages.
+
+- Usage: They can be used for conditions involving relations, such as IN, ALL, ANY, and EXISTS.
+
+- Example: The document provides examples like finding employees in the same department as "Sally" or finding employees with the highest salary.
+
+#### Subqueries Producing One Value
+- Single-Value Subqueries: These subqueries return a single value, often used in comparisons within the main query.
+  
+- Example: Finding employees in a specific department where only one department matches the criteria.
+
+#### Subqueries and Empty Relations
+- EXISTS and NOT EXISTS: These operators are used to check whether a subquery returns any rows, which is useful for testing conditions related to the existence of data.
+  
+- Example: Finding employees who earn more than some managers by checking the existence of certain conditions.
+
+#### Joins
+- **Types of Joins**: The document explains various join operations, including:
+    - **Inner Join**: Returns only the rows that match the search conditions.
+      
+    - **Natural Join**: A type of inner join that automatically matches columns with the same name.
+      
+    - **Outer Joins**: Includes Left, Right, and Full Outer Joins, which return matched rows plus unmatched rows from one or both sides of the join clause.
+      
+- Examples: The slides provide SQL code examples to illustrate how each type of join works.
+
+#### Subqueries in the FROM Clause
+- **Aggregation with Subqueries**: Subqueries can be used in the FROM clause to aggregate data before applying further conditions.
+  
+- Example: Finding departments with more than a certain number of employees or the department with the highest total salary.
+
+#### Subquery Examples
+- **Complex Queries**: The slides offer examples of more complex SQL queries, such as finding employees with salaries greater than the average, or suppliers who charge more than the average for specific parts.
 
 ---
 ### [WEEK 7](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%207)
