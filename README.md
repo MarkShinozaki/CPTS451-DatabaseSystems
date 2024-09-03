@@ -12,7 +12,7 @@
 ### 2. [Additional Resources](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Additional-Resources)
 ---
 
-### 3. [Slides/Lectures](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/blob/Slides-Lectures/README.md)
+### 3. [Slides/Lectures](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures)
 
 - #### [WEEK 1 - Course Introduction and Database Fundamentals](https://github.com/MarkShinozaki/CPTS451-DatabaseSystems/tree/Slides-Lectures/Week%201)
 
